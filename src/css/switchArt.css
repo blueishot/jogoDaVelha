@@ -1,0 +1,30 @@
+.switchBody {
+    background-color: #2BA9EA;
+    border-radius: 100px;
+    width: 56px;
+    height: 32px;
+    padding: 3px;
+    border: solid 1px #FFFFFF;
+    display: flex;
+    align-items:center;
+}
+
+.switchWidthLeft {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.switchWidthRight {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.switchBall {
+    height: 24px;
+    border-radius: 1000px;
+    width: 24px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}

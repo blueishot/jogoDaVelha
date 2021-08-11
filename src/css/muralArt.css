@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.painelGame {
+    width: 20%;
+    background-color: #0097E6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Ubuntu';
+}
+
+.playerName {
+    background-color: white;
+    border-radius: 10px;
+    width: inherit;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #828282;
+    margin-top: 20px;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.matchType {
+    user-select: none;
+    margin-bottom: 45px;
+}
+
+.matchsFormat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
