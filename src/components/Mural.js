@@ -1,6 +1,7 @@
 import muralArt from '../css/muralArt.css'
 import Switch from '../components/Switch.js'
 import Button from '../components/Button.js'
+import History from '../components/History.js'
 
 const Mural = () => {
     return (
@@ -37,6 +38,21 @@ const Mural = () => {
             >
                 Jogar
             </Button>
+            <div className='matchRecord'>
+                <div 
+                style={{
+                    textAlign:'center', 
+                    margin:'10px',
+                    fontWeight:'bolder',
+                    marginTop:'38px',
+                    marginBottom:'20px'
+                }}
+                >
+                    <span style={{color:'#FFFFFF'}}>Histórico de Partidas</span>
+                </div>
+                <History/>
+            </div>
+     
         </div>
     )
 }
