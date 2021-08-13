@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+.historyMatch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .winnerBlock {
     width: 168px;
@@ -9,4 +16,17 @@
     flex-direction: column;
     padding: 10px;
     font-family: 'Ubuntu';
+}
+
+.historyBlocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blockGame {
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    margin-left: 2px;
+    margin-bottom: 2px  ;
 }

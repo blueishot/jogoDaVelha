@@ -1,8 +1,12 @@
 import historyArt from '../css/historyArt.css'
 
-const History = () => {
+const History = (props) => {
     return (
-        <div className='historyMatch'>
+        <div className='historyMatch'
+        style={{
+            marginBottom:props.bottomSpace
+        }}
+        >
             <div className='winnerBlock'>
                 <span
                 style={{
@@ -28,11 +32,29 @@ const History = () => {
                 <span
                 style={{
                     color:'#FFFFFF',
-                    fontSize:'14px'
+                    fontSize:'14px',
+                    userSelect:'none'
                 }}
                 >
                     Cenário
                 </span>
+            </div>
+            <div className='historyBlocks'>
+                <div>
+                    <div className='blockGame'/>
+                    <div className='blockGame'/>
+                    <div className='blockGame'/>
+                </div>
+                <div>
+                    <div className='blockGame'/>
+                    <div className='blockGame'/>
+                    <div className='blockGame'/>
+                </div>
+                <div>
+                    <div className='blockGame'/>
+                    <div className='blockGame'/>
+                    <div className='blockGame'/>
+                </div>
             </div>
         </div>
     )
