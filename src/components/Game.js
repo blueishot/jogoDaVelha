@@ -1,6 +1,20 @@
+import { useState } from 'react';
 import gameArt from '../css/gameArt.css'
 
 const Game = () => {
+   
+    const [choice, setChoice] = useState('')
+
+    let currentMove = 'X'
+
+    const moveTurn = () => {
+        if (currentMove == 'O') {
+            currentMove = 'X'
+        } else {
+            currentMove = 'O'
+        }
+    }
+   
     return (
         <div className='middlePainel'>
             <div className='scorePainel'>
@@ -36,19 +50,37 @@ const Game = () => {
             </div>
             <div className='ticTacToeBoard'>
                 <div>
-                    <div className='boardGame'/>
-                    <div className='boardGame'/>
-                    <div className='boardGame'/>
+                    <div className='boardGame' onClick={(moveTurn) => setChoice (currentMove)}>
+                        {choice}    
+                    </div>
+                    <div className='boardGame' onClick={() => setChoice (currentMove)}>
+                        {choice}
+                    </div>
+                    <div className='boardGame' onClick={() => setChoice (currentMove)}>
+                        {choice}
+                    </div>
                 </div>
                 <div>
-                    <div className='boardGame'/>
-                    <div className='boardGame'/>
-                    <div className='boardGame'/>
+                    <div className='boardGame' onClick={() => setChoice (currentMove)}>
+                        {choice}
+                    </div>
+                    <div className='boardGame' onClick={() => setChoice (currentMove)}>
+                        {choice}
+                    </div>
+                    <div className='boardGame' onClick={() => setChoice (currentMove)}>
+                        {choice}
+                    </div>
                 </div>
                 <div>
-                    <div className='boardGame'/>
-                    <div className='boardGame'/>
-                    <div className='boardGame'/>
+                    <div className='boardGame' onClick={() => setChoice (currentMove)}>
+                        {choice}
+                    </div>
+                    <div className='boardGame' onClick={() => setChoice (currentMove)}>
+                        {choice}
+                    </div>
+                    <div className='boardGame' onClick={() => setChoice (currentMove)}>
+                        {choice}
+                    </div>
                 </div>
             </div>
         </div>

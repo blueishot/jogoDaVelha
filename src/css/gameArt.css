@@ -49,4 +49,11 @@
     margin-bottom: 15px;
     margin-left: 15px;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #828282;
+    font-size: 130px;
+    font-weight: bold;
+    cursor: pointer;
 }
