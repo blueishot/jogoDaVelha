@@ -6,7 +6,8 @@ const Game = () => {
    
     const [turn, setTurn] = useState('X')
     const [piece, setPiece] = useState(Array(9).fill(''));
-    const [winner, setWinner] = useState ()
+    const [winner, setWinner] = useState ();
+
 
     const checkWinner = (squarePiece) => {
         let combos = [
@@ -19,6 +20,15 @@ const Game = () => {
             [0, 4, 8],
             [2, 4, 6],
         ];
+        for (let i=0; i < combos.length; i++) {
+            const [a,b,c] = combos[i];
+            if (squarePiece[a] != '' && squarePiece[a] === squarePiece[b] && squarePiece[b] === squarePiece[c]){
+                alert(turn)
+            }
+
+        }
+
+        return null;
     }
 
     const changePiece = (sqr) => {
@@ -79,18 +89,18 @@ const Game = () => {
                 </div>
             </div>
             <div className='ticTacToeBoard'>
-                <div>
+                <div className='squarePositions'>
                     <Square sqr={0}/>
                     <Square sqr={1}/>
                     <Square sqr={2}/>
 
                 </div>
-                <div>
+                <div className='squarePositions'>
                     <Square sqr={3}/>
                     <Square sqr={4}/>
                     <Square sqr={5}/>
                 </div>
-                <div>
+                <div className='squarePositions'>
                     <Square sqr={6}/>
                     <Square sqr={7}/>
                     <Square sqr={8}/>
